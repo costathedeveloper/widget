@@ -1,0 +1,123 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to right, #041222 50%, #3078AF 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.main{
+    width: 40%;
+}
+
+.container{
+    margin: auto;
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: rgba(0,0,0, 0.5) 26px 26px 26px 26px;
+    background-color: #041222;
+    border-radius: 20px;
+}
+.container h1{
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 4px;
+    color: #FFFFFF;
+}
+#widgets_container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+
+.widgets{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    min-height: 60px;
+    flex-wrap: 16px;
+    gap: 16px;
+    background-color: #151A35;
+    border-radius: 24px;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: rgba(0,0,0, 0.5) 0px 6px 24px 0px;
+}
+.widgets:hover{
+    cursor: grab;
+}
+.crypto_avatar{
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.currency_name{
+    display: flex;
+    flex-direction: column;
+    
+}
+.currency_name h1{
+    font-size: large;
+    margin: 0;
+    color: #0c75c8;
+}
+.currency_name p{
+    font-size: small;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.info {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.price,
+.market_cap,
+.day_rate {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+
+.price h1,
+.market_cap h1,
+.day_rate h1 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.price p,
+.market_cap p,
+.day_rate p {
+    font-weight: 500;
+    color: #D9D9D9;
+}
+
+.widgets_chosen {
+    box-shadow: 8px 8px 32px var(--gray);
+}
+
+.widgets-drag {
+    opacity: 0;
+}
+
